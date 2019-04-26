@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "python-flask-v2",
+  "builds": [
+    { "src": "**/*.py", "use": "@now/python@canary",
+      "config": { "maxLambdaSize": "50mb" }	},
+	{ "src": "templates/*.html", "use": "@now/static" }
+  ]
+}

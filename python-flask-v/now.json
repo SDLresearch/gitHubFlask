@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "python-flask-v",
+  "builds": [
+    { "src": "**/*.py", "use": "@now/python@canary" },
+    { "src": "**/*.html", "use": "@now/static" },
+	{ "src": "static/**", "use": "@now/static" }
+  ]
+}
